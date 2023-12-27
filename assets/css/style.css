@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --header-bg: #10375c;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    background: #fffaf5;
+}
+/* common */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sora", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 56px;
+    display: inline-block;
+    min-width: 130px;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: 999px;
+    border: 1px solid #4a54b3;
+    color: #000958;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    background: rgb(255, 5, 5);
+}
+
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    padding: 26px 0; /* đo nchi tiết nào tứ dưới lên trên nhớ trừ đi 26px */
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.header-action__link,
+.navbar__link {
+    color: #5e6085;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1; /* 100% */
+    padding: 8px 16px;
+}
+
+.navbar__link:hover {
+    color: #000958;
+    text-shadow: 1px 0 0 currentColor; /* làm cho chữ to lên không bị nhấp nháy lien tục gây khó chịu  */
+}
+
+.header-action__link:hover {
+    font-size: 1.6rem;
+    color: rgb(255, 5, 5);
+    padding: 6px 12px; /* lấy tổng của  padding: 8px 16px; + font-size: 1.4rem;- font-size: 1.6rem; sẽ suy ra phần padding đê chữ không bị duy chuyển
+}          */
+}
+
+.header-action__btn {
+    --height: 50px;
+    min-width: 118px;
+}
