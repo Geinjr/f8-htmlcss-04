@@ -300,6 +300,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    row: gap 146px;
 }
 
 .about__label {
@@ -422,4 +423,57 @@ button {
     top: 157px;
     right: -50px;
     z-index: -1;
+}
+
+.about__img-wrap--bottom::before {
+    content: none;
+    margin-left: 0;
+}
+
+.about__img-wrap--bottom {
+    background: url(<path-to-image>), rgb(143, 174, 233) 50% / cover no-repeat;
+    box-shadow: 0px 3px 63px 0px rgba(153, 183, 208, 0.59);
+    border-radius: 18px;
+    border: 2px solid #ffffff;
+}
+
+.about__img--bottom {
+    width: 100%;
+}
+
+.about__decor-img {
+    position: absolute;
+}
+
+.about__decor-img:nth-child(1) {
+    top: 13px;
+    right: 64px;
+}
+.about__decor-img:nth-child(2) {
+    top: -16px;
+    right: 13px;
+}
+.about__decor-img:nth-child(3) {
+    top: 33px;
+    right: -21px;
+}
+.about__decor-img:nth-child(4) {
+    top: 268px;
+    right: -33px;
+}
+.about__decor-img:nth-child(5) {
+    bottom: 150px;
+    right: 19px;
+}
+.about__decor-img:nth-child(6) {
+    right: -24px;
+    bottom: -40px;
+}
+.about__decor-img:nth-child(7) {
+    right: -32px;
+    bottom: -47px;
+}
+.about__decor-img:nth-child(8) {
+    right: -42px;
+    bottom: -55px;
 }
