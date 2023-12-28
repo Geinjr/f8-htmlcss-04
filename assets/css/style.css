@@ -109,6 +109,8 @@ button {
 
 .hero__media {
     display: flex;
+    position: relative;
+    padding-bottom: 94px;
 }
 
 .hero__inner {
@@ -156,4 +158,64 @@ button {
     margin: 0 0 -58px -24px; /* margin để ảnh nhỏ đè lên trên ảnh lớn */
     border: 2px solid rgb(251, 218, 223);
     background: #faa7ad;
+}
+
+.hero__list {
+    width: 250px;
+    height: 156px;
+    padding: 18px 14px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+    position: absolute;
+    left: 129px;
+    bottom: 0;/* bottom=0 thêm vào phần media để sau này tính toán khoảng cách sẽ được tính từ phần mép của mục hero media , chữ cũng như hình ảnh không bị nằm dưới  */
+}
+.hero--list--item {
+    display: flex;ư
+}
+
+.hero--list--item--thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: #FEC23F;
+
+}
+
+.hero-list-item__info {
+    margin-left: 10px;
+}
+
+.hero-list-item__title {
+    color: #181E52;
+font-family: Sora ,sans-serif;
+font-size: 1.4rem ;
+font-style: normal;
+font-weight: 600;
+line-height: 1; /* 100% */
+}
+
+.hero-list-item__skeleton {
+    margin-top: 6px;
+    width: var(--width, 118px);
+height: 4px;
+border-radius: 10px;
+opacity: 0.08;
+background: #000958;
+}
+
+.hero-list-item__separate {
+width: 100%;
+height: 2px;
+border-radius: 999px;
+margin: 20px 0;
+background: whitesmoke;
+display: block;
+}
+
+.hero--list--item:nth-of-type(2) .hero--list--item--thumb {
+    background: #6597C2;
+
 }
