@@ -967,3 +967,47 @@ button {
 .pricing-item__btn2 {
     background: #ff5b2e;
 }
+
+/* review */
+.review {
+    padding: 53px 0;
+}
+
+.review__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 44px;
+}
+
+.review__control {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1.5px solid #ffd1c4;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: #ff5b2e;
+}
+
+..review__control:hover {
+    color: whitesmoke;
+    background: #ff5b2e;
+    border: #ff5b2e;
+    cursor: pointer;
+}
+
+.review__item {
+    display: flex;
+}
+
+.review-item__media {
+    flex-shrink: 0;
+    width: 274px;
+}
+
+.review-item__img {
+    width: 100%;
+}
