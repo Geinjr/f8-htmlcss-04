@@ -54,7 +54,7 @@ a {
 }
 
 .btn:hover {
-    background: rgb(255, 5, 5);
+    background: rgb(92, 200, 236);
 }
 .btn__icon {
     margin-left: 10px;
@@ -817,6 +817,10 @@ button {
     background: #fff6ed;
 }
 
+.pricing__container {
+    width: 994px;
+}
+
 .pricing__heading,
 .pricing__desc {
     text-align: center;
@@ -890,4 +894,76 @@ button {
     position: absolute;
     top: -10px;
     right: -112px;
+}
+
+/* pricing__list  */
+
+.pricing__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    margin-top: 56px;
+}
+
+.pricing-item {
+    padding: 30px 28px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 20px 44px 0px rgba(195, 108, 22, 0.06);
+}
+
+.pricing-item__type {
+    color: #ff5b2e;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+}
+
+.pricing-item__heading {
+    color: #3f4065;
+    margin-top: 8px;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.pricing-item__price {
+    margin-top: 24px;
+    color: #000958;
+    font-family: Sora, sans-serif;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 1.03; /* 103.03% */
+}
+
+.pricing-item__btn {
+    --height: 44px;
+    margin-top: 24px;
+    width: 100%;
+    border-radius: 39px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    background: transparent;
+}
+
+.pricing-item__list {
+    margin-top: 24px;
+}
+
+.pricing-item__item {
+    display: flex;
+    margin-top: 18px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+}
+
+.pricing-item__item::before {
+    content: url(../icon/tick\ check\ list.svg);
+    margin-right: 14px;
+}
+
+.pricing-item__btn2 {
+    background: #ff5b2e;
 }
